@@ -1,0 +1,41 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		title #{title}
+		include ../../includes/head
+		block link
+		meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0")
+		meta(name="keywords" content="电影、经典电影、热映、电视剧、美剧、影评、电影院、电影票、排行、推荐")
+		meta(name="description" content="豆瓣电影提供最新的电影介绍及评论包括上映影片的影讯查询及购票服务。你可以记录想看、在看和看过的电影电视剧，顺便打分、写影评。根据你的口味，豆瓣电影会推荐好电影给你。")
+		link(href="/libs/css/blog/index.min.css",rel="stylesheet")
+	body
+		div(class="bg-cover")
+		div(class="bg-cover-mask")
+		div(class="panel-main")
+			div(class="panel-main__inner panel-inverted")
+				div(class="panel-main__content")
+					div(class="ih-item circle effect right_to_left")  
+						a(href="/blog" title="前往 maydays 的主页", class="blog-button")
+							div(class="logo")
+								img(src="/libs/images/blog/logo.png" alt="img")
+					h1(class="panel-cover__title panel-title")
+						a(href="/blog" title="link to homepage for maydays", class="blog-button") Maydays
+					span(class="panel-cover__subtitle panel-subtitle") 个人站		
+					hr(class="panel-cover__divider")
+					p(class="panel-cover__description") 欢迎来到我的个人站~
+					hr(class="panel-cover__divider panel-cover__divider--secondary")
+					div(class="navigation-wrapper")
+					div
+						nav(class="cover-navigation cover-navigation--primary")
+							ul(class="navigation")
+								li(class="navigation__item")
+									a(href="/blog",title="",class="blog-button") 博客主页		
+								li(class="navigation__item")
+									a(href="/movie",title="archive") 豆瓣电影	
+								li(class="navigation__item")
+									a(href="/musicIndex",title="tags") 豆瓣音乐
+								li(class="navigation__item")
+									a(href="/about",title="about") 关于我
+					

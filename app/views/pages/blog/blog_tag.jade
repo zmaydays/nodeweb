@@ -1,0 +1,33 @@
+extends ../../includes/blog_layout
+
+block link
+  meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0")
+  meta(name="keywords" content="电影、经典电影、热映、电视剧、美剧、影评、电影院、电影票、排行、推荐")
+  meta(name="description" content="豆瓣电影提供最新的电影介绍及评论包括上映影片的影讯查询及购票服务。你可以记录想看、在看和看过的电影电视剧，顺便打分、写影评。根据你的口味，豆瓣电影会推荐好电影给你。")
+  link(href="/libs/css/blog/blog_index.min.css",rel="stylesheet")
+block content
+  // 容器标签节点
+  .container       
+    .row
+      .col-md-3
+        div(class="header")
+        div(class="bg-cover-mask")
+      .col-md-1
+      .col-md-8
+        div.button-group
+          each blogCat in blogCategories
+            button(class="btn btn-primary" type="button") #{blogCat.name} 
+              span(class="badge")  #{blogCat.blog.length}
+        div
+          each blogCat in blogCategories
+            .panel.panel-primary
+              .panel-heading
+                h4
+                  a(href='/blog/results?cat=#{blogCat._id}&p=0') #{blogCat.name}
+              .panel-body
+                if blogCat.blog && blogCat.blog.length > 0
+                ul
+                  each item in blogCat.blog
+                    li
+                      a(href="/blog/#{item._id}") #{item.title}
+                      span(class="right") #{moment(item.meta.updateAt).format('MM/DD/YYYY')}

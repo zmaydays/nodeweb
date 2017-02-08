@@ -1,0 +1,87 @@
+extends ../../includes/blog_layout
+
+block content
+  .container.tools
+    .row
+      .col-xs-6.col-sm-2.col-md-2.col-lg-2
+        a(href="/")
+        button(class="btn btn-primary",type="button") 首页
+      .col-xs-6.col-sm-2.col-md-2.col-lg-2
+        a(href="/blog")
+        button(class="btn btn-primary",type="button") 博客首页
+      .col-xs-6.col-sm-2.col-md-2.col-lg-2
+        a(href="/movie")
+        button(class="btn btn-primary",type="button") 豆瓣电影
+      .col-xs-6.col-sm-2.col-md-2.col-lg-2
+        a(href="/musicIndex")
+        button(class="btn btn-primary",type="button") 豆瓣音乐
+    .row
+      .col-xs-6.col-sm-2.col-md-2.col-lg-2
+        a(href="/signin")
+        button(class="btn btn-primary",type="button") 用户注册页面
+      .col-xs-6.col-sm-2.col-md-2.col-lg-2
+        a(href="/signin")
+        button(class="btn btn-primary",type="button") 用户登陆页面
+      .col-xs-6.col-sm-2.col-md-2.col-lg-2
+        a(href="/movie")
+        button(class="btn btn-primary",type="button") 用户详情列表页
+    .row
+      .col-xs-6.col-sm-2.col-md-2.col-lg-2
+        a(href="/blog/:id")
+        button(class="btn btn-primary",type="button") 博客详情页
+      .col-xs-6.col-sm-2.col-md-2.col-lg-2
+        a(href="/blog/tag")
+        button(class="btn btn-primary",type="button") 博客标签页
+       .col-xs-6.col-sm-2.col-md-2.col-lg-2
+        a(href="/admin/blog/new")
+        button(class="btn btn-primary",type="button") 博客后台录入页
+      .col-xs-6.col-sm-2.col-md-2.col-lg-2
+        a(href="/admin/blog/list")
+        button(class="btn btn-primary",type="button") 博客列表页
+      .col-xs-6.col-sm-2.col-md-2.col-lg-2
+        a(href="/admin/blog/blogCategory/new")
+        button(class="btn btn-primary",type="button") 博客分类录入页
+      .col-xs-6.col-sm-2.col-md-2.col-lg-2
+        a(href="/admin/blog/blogCategory/list")
+        button(class="btn btn-primary",type="button") 博客分类页
+    .row
+      .col-xs-6.col-sm-2.col-md-2.col-lg-2
+        a(href="/movie/:id")
+        button(class="btn btn-primary",type="button") 电影详情页
+       .col-xs-6.col-sm-2.col-md-2.col-lg-2
+        a(href="/admin/movie/new")
+        button(class="btn btn-primary",type="button") 电影后台录入页
+      .col-xs-6.col-sm-2.col-md-2.col-lg-2
+        a(href="/admin/movie/list")
+        button(class="btn btn-primary",type="button") 电影列表页
+      .col-xs-6.col-sm-2.col-md-2.col-lg-2
+        a(href="/admin/movie/movieCategory/new")
+        button(class="btn btn-primary",type="button") 电影分类录入页
+      .col-xs-6.col-sm-2.col-md-2.col-lg-2
+        a(href="/admin/movie/movieCategory/list")
+        button(class="btn btn-primary",type="button") 电影分类页
+      .col-xs-6.col-sm-2.col-md-2.col-lg-2
+        a(href="/admin/movie/programme/new")
+        button(class="btn btn-primary",type="button") 电影院录入页
+      .col-xs-6.col-sm-2.col-md-2.col-lg-2
+        a(href="/admin/movie/city/list")
+        button(class="btn btn-primary",type="button") 电影院列表页
+    .row
+      .col-xs-6.col-sm-2.col-md-2.col-lg-2
+        a(href="/music/:id")
+        button(class="btn btn-primary",type="button") 音乐详情页
+       .col-xs-6.col-sm-2.col-md-2.col-lg-2
+        a(href="/admin/music/new")
+        button(class="btn btn-primary",type="button") 音乐后台录入页
+      .col-xs-6.col-sm-2.col-md-2.col-lg-2
+        a(href="/admin/music/list")
+        button(class="btn btn-primary",type="button") 音乐列表页
+      .col-xs-6.col-sm-2.col-md-2.col-lg-2
+        a(href="/admin/music/musicCategory/new")
+        button(class="btn btn-primary",type="button") 音乐分类录入页
+      .col-xs-6.col-sm-2.col-md-2.col-lg-2
+        a(href="/admin/music/musicCategory/list")
+        button(class="btn btn-primary",type="button") 音乐分类页
+      .col-xs-6.col-sm-2.col-md-2.col-lg-2
+        a(href="/admin/music/programme/list")
+        button(class="btn btn-primary",type="button") 热门榜单列表页

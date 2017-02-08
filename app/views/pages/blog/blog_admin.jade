@@ -1,0 +1,45 @@
+extends ../../includes/layout
+
+block content
+  .container
+    .row
+      form.form-horizontal(method="post", action="/admin/blog", enctype="multipart/form-data")
+        .form-group
+          label.col-sm-2.control-label 豆瓣同步
+          .col-sm-10
+            input#douban.form-control(type="text")
+        if blog._id
+          input(type="hidden", name="blog[_id]", value=blog._id)
+        .form-group
+          label.col-sm-2.control-label(for="inputCategory") 电影分类
+          .col-sm-10
+            input#inputCategory.form-control(type="text", name="blog[blogCategoryName]", value=blog.blogCategoryName)
+        .form-group
+          label.col-sm-2.control-label 分类选择
+          each blogCat in blogCategories
+            label.radio-inline
+              if blog.blogCategory
+                input(type="radio", name="blog[blogCategory]", value=blogCat._id, checked=blogCat._id.toString()==blog.blogCategory.toString())
+              else
+                input(type="radio", name="blog[blogCategory]", value=blogCat._id)
+              | #{blogCat.name}
+        .form-group
+          label.col-sm-2.control-label(for="inputTitle") 标题
+          .col-sm-10
+            input#inputTitle.form-control(type="text", name="blog[title]", value=blog.title)
+        .form-group
+          label.col-sm-2.control-label(for="inputAuthor") 作者
+          .col-sm-10
+            input#inputAuthor.form-control(type="text", name="blog[author]", value=blog.author)
+        .form-group
+          label.col-sm-2.control-label(for="inputPoster") 封面地址
+          .col-sm-10
+            input#inputPoster.form-control(type="text", name="blog[poster]", value=blog.poster)
+        .form-group
+          label.col-sm-2.control-label(for="inputContent") 内容
+          .col-sm-10
+            textarea#inputContent.form-control(type="text", name="blog[content]")= blog.content
+        .form-group
+          .col-sm-offset-2.col-sm-10
+          button.btn.btn-default(type="submit") 录入
+  script(src="/libs/scripts/js/blog/blog_detail.js")

@@ -1,0 +1,29 @@
+extends ../../includes/layout
+
+block content
+  .container
+    .row
+      table.table.table-hover.table-bordered
+        thead
+          tr
+            th 类别
+            th 标题
+            th 作者
+            th 录入时间
+            th pv
+            th 查看
+            th 修改
+            th 删除
+        tbody
+          each item in blogs
+            tr(class="item-id-#{item._id}")
+              td #{item.name}
+              td #{item.title}
+              td #{item.author}
+              td #{moment(item.meta.updateAt).format('MM/DD/YYYY')}
+              td #{item.pv}
+              td: a(target="_blank", href="/blog/#{item._id}") 查看
+              td: a(target="_blank", href="/admin/blog/update/#{item._id}") 修改
+              td
+                button.btn.btn-danger.del(type="button", data-id="#{item._id}") 删除
+  script(src="/libs/scripts/js/blog/blog_admin.js")

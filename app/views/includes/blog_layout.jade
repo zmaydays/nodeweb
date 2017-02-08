@@ -1,0 +1,42 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        title #{title}
+        include ./head
+        block link
+    body
+        include ./blog_header
+        block content
+        block footer
+            .m-footer
+                .container-fluid
+                    .row
+                        .col-md-offset-1.col-md-4.col-xs-offset-1.col-xs-8
+                        .col-md-offset-1.col-md-8.col-xs-offset-1.col-xs-8.right
+                            footer
+                                div(class="footer-div")
+                                    nav(class="container")
+                                        ul(class="row")
+                                            li(class="col-md-2")
+                                                a(href="http://weibo.com/", title="@maydays的微博", target="_blank")
+                                                    span(class="iconfont icon-weibo")
+                                            li(class="col-md-2")
+                                                a(href="https://github.com/392616300" title="@maydays的Github" target="_blank")
+                                                    span(class="iconfont icon-github")
+                                            li(class="col-md-2")
+                                                a(href="mailto:392616300@qq.com" title="Contact me")
+                                                    span(class="iconfont icon-youjian1")
+                                            li(class="col-md-2")
+                                                a(href="/blog" title="@maydays的Github" target="_blank")
+                                                    span(class="iconfont icon-iconfont04")
+                                            li(class="col-md-2")
+                                                a(href="/movie" title="@maydays的Github" target="_blank")
+                                                    span(class="iconfont icon-dianying")
+                                            li(class="col-md-2")
+                                                a(href="/musicIndex" title="@maydays的Github" target="_blank")
+                                                    span(class="iconfont icon-iconfontbiaozhunmoban01")
+                                div(class="copyright")
+                                    p(align="center") Copyright © Maydays  2017 Go On
+                        .col-md-1
