@@ -39,7 +39,7 @@
 项目整体效果
 -------
 <img src="http://tt.leju.com/a32b4da32d9a67a5/kodexplorer/data/User/hefei/home/2017/myfile/index.png" width="90%" float"left"/><img src="http://tt.leju.com/a32b4da32d9a67a5/kodexplorer/data/User/hefei/home/2017/myfile/blog.png" width="90%" float"left"/> <img src="http://tt.leju.com/a32b4da32d9a67a5/kodexplorer/data/User/hefei/home/2017/myfile/movie.png" width="90%" float"left"/><img src="http://tt.leju.com/a32b4da32d9a67a5/kodexplorer/data/User/hefei/home/2017/myfile/music.png" width="90%" float"left"/> 
-[更多项目预览图]("preimg.md")
+[更多项目预览图](preimg.md)
 --------
 运行环境及Node版本:
 -------
