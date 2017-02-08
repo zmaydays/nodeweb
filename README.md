@@ -25,7 +25,7 @@
 
   网站正常访问无需管理原权限，以下网站数据的添加及删除功能需要登录默认管理员账号(**账号:1234 密码:1234**)。
 
-  具体功能可查看网站[动态效果演示](http://7xrqxi.com1.z0.glb.clouddn.com/douban1.gif),gif图片有点大请耐心等待。
+  具体功能可查看网站
   * 博客电影和音乐相同的展示页面;
   * 具有用户注册登录及管理;
   * 用户操作权限设置;
@@ -38,28 +38,9 @@
 
 项目整体效果
 -------
-<div>
-   <div>
-        <p>首页</p>
-        <img src="http://tt.leju.com/a32b4da32d9a67a5/kodexplorer/data/User/hefei/home/2017/myfile/index.png" width="90%" float"left"/> 
-    </div>
-    <div>
-        <p>博客首页</p>
-        <img src="http://tt.leju.com/a32b4da32d9a67a5/kodexplorer/data/User/hefei/home/2017/myfile/blog.png" width="90%" float"left"/> 
-    </div> 
-    <div>
-        <p>电影首页</p>
-        <img src="http://tt.leju.com/a32b4da32d9a67a5/kodexplorer/data/User/hefei/home/2017/myfile/movie.png" width="90%" float"left"/> 
-    </div> 
-    <div>
-        <p>音乐首页</p>
-        <img src="http://tt.leju.com/a32b4da32d9a67a5/kodexplorer/data/User/hefei/home/2017/myfile/music.png" width="90%" float"left"/> 
-    </div>
-    <div>
-      <a href="preimg.md">更多项目预览图</a>
-    </div>
-<div>
-
+<img src="http://tt.leju.com/a32b4da32d9a67a5/kodexplorer/data/User/hefei/home/2017/myfile/index.png" width="90%" float"left"/><img src="http://tt.leju.com/a32b4da32d9a67a5/kodexplorer/data/User/hefei/home/2017/myfile/blog.png" width="90%" float"left"/> <img src="http://tt.leju.com/a32b4da32d9a67a5/kodexplorer/data/User/hefei/home/2017/myfile/movie.png" width="90%" float"left"/><img src="http://tt.leju.com/a32b4da32d9a67a5/kodexplorer/data/User/hefei/home/2017/myfile/music.png" width="90%" float"left"/> 
+[更多项目预览图]("preimg.md")
+--------
 运行环境及Node版本:
 -------
 目前在Mac下的node 4.2.x版本运行正常
