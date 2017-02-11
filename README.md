@@ -11,7 +11,7 @@
   * 使用`Moment.js`格式化时间;
 
 **2. 项目前端搭建:**
-  * 使用`jQuery`和`Bootsrap`完成网站前端JS脚本和样式处理;
+  * 使用`jQuery`和`Bootstrap`完成网站前端JS脚本和样式处理;
   * 使用`Sass`完成博客、电影和音乐首页样式的编写;
   * 使用`validate.js`完成对账号登录注册的判断;
   * 使用`jQuery lazyload`插件对首页图片的延迟加载;
