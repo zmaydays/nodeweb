@@ -53,7 +53,7 @@
 运行与使用:
 ----
 1. 启动数据库`mongod`,如果出现错误尝试输入`sudo mongod`来完成启动
-2. 项目目录下的doubanDatabase是可供选择导入的数据库信息，可通过命令`mongorestore -h host -d dataName --dir=path` 来导入该文件夹信息到数据库中，其中-h是连接地址，如127.0.0.1 -d是将要创建数据库的名称，如douban(注意:项目中链接的数据库名称是douban,如果-d后创建的数据库名称叫douban2,则需要将app.js文件`dbUrl = 'mongodb://127.0.0.1/douban`中的douban改成douban2),--dir=后为该doubanDatabase所在路径，具体可通过`mongorestore --help`查看
+2. 项目目录下的doubanDatabase是可供选择导入的数据库信息，可通过命令`mongorestore -h host -d dataName --dir=path` 来导入该文件夹信息到数据库中，其中-h是连接地址，如localhst:27017 -d是将要创建数据库的名称，如douban(注意:项目中链接的数据库名称是douban,如果-d后创建的数据库名称叫douban2,则需要将app.js文件`dbUrl = 'mongodb://localhost:27017/douban`中的douban改成douban2),--dir=后为该doubanDatabase所在路径，具体可通过`mongorestore --help`查看
 3. 使用命令行工具在该项目目录下使用gulp运行程序,默认是使用3000端口，若端口已占用可在主目录app.js文件中将3000端口换成未占用的端口，当命令行工具看到：Movie started on； port:3000时在游览器中输入localhost:3000即可看到项目电影主页;
 4. doubanDatabase中存储了默认的管理员账号:1234 密码:1234 权限为50，只有当权限大于10才可以访问后台控制页面，可通过修改数据库中users中role值完成用户权限控制。
 
